@@ -19,6 +19,9 @@ EXCLUDE_DIRS = {'.git', '_ARCHIVE', '_BACKUP_2026-07-01-before-inline-removal',
 REPLACEMENTS = [
     ('white-engineering-background.png', 'white-engineering-background.webp'),
     ('wrap-truck-erik.png', 'wrap-truck-erik.webp'),
+    ('architectural-drawing-transparent.png', 'architectural-drawing-transparent.webp'),
+    ('engineering-schematics.png', 'engineering-schematics.jpg'),
+    ('background-forrest-green.webp', 'forest-background-green.webp'),
 ]
 
 PRIMER_RE = re.compile(r'primer-page-([a-z-]+)-2\.png')
