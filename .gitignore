@@ -1,0 +1,23 @@
+# Archived / backup snapshots — kept locally, not in git
+_ARCHIVE/
+_BACKUP_*/
+_LOCKED/
+scraps/
+
+# ZIP exports — too large for GitHub, and the working tree is the source of truth
+*.zip
+
+# OS
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Node (in case a build gets added later)
+node_modules/
+.env
+.env.local

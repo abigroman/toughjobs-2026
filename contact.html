@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact — Toughjobs | Marketing for the Trades</title>
+<meta name="description" content="Contact — Toughjobs Digital Marketing, marketing built for the trades. Serving Illinois, Iowa, Missouri, Wisconsin and Indiana. Call (309) 928-9080." />
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  *,*::before,*::after{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:#FCFCFD}
+  body{font-family:"Inter","Helvetica Neue",Helvetica,Arial,sans-serif;color:#0A0F1C;-webkit-font-smoothing:antialiased}
+  :root{--ink:#0A0F1C;--navy:#002768;--red:#C8262A;--white:#FFFFFF;--accent:var(--red);--container:1240px}
+  .display{font-family:"Archivo Black",sans-serif;font-weight:900;text-transform:uppercase;letter-spacing:-0.01em;line-height:.95}
+  .eyebrow{font-family:"Archivo",sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:.08em;font-size:12px}
+  .container{max-width:var(--container);margin:0 auto;padding:0 32px}
+  section{padding-block:80px}
+  .btn{display:inline-flex;align-items:center;gap:10px;padding:16px 26px;font-family:"Archivo",sans-serif;font-weight:800;letter-spacing:.06em;font-size:13px;text-transform:uppercase;text-decoration:none;background:var(--accent);color:var(--white);border:0;cursor:pointer;transition:filter .2s ease}
+  .btn:hover{filter:brightness(.92)}
+  main{min-height:400px}
+  h1,h2,h3{font-family:"Archivo Black",sans-serif;text-transform:uppercase}
+  h1{font-size:48px}
+  h2{font-size:42px;margin:20px 0}
+  p{line-height:1.6;margin:16px 0}
+  .on-dark{color:var(--white)}
+  .on-dark h1,.on-dark h2,.on-dark h3{color:var(--white)}
+  .on-dark p{color:rgba(255,255,255,.82)}
+  form{max-width:600px;display:flex;flex-direction:column;gap:20px}
+  .form-group{display:flex;flex-direction:column}
+  label{font-family:"Archivo",sans-serif;font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.04em;margin-bottom:8px}
+  input,textarea,select{font-family:inherit;padding:14px 16px;border:1px solid #D0D0D0;border-radius:4px;font-size:15px}
+  input:focus,textarea:focus,select:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(200,38,42,.1)}
+  textarea{resize:vertical;min-height:140px}
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  @media(max-width:640px){
+    .form-row{grid-template-columns:1fr}
+  }
+</style>
+<link rel="stylesheet" href="shared-header.css" />
+<style id="header-logo-fix">header .logo-img{width:150px;height:100px}</style>
+<link rel="stylesheet" href="page-styles.css" />
+<style id="white-texture-sweep">
+/* Engineering blueprint texture on all white surfaces */
+.bg-white, .bg-light, .light-section, .on-light, .blurbs-section {
+  background-color:#FFFFFF !important;
+  background-image:url('assets/white-engineering-background.png') !important;
+  background-size:cover !important;
+  background-position:center !important;
+  background-attachment:fixed !important;
+}
+</style>
+</head>
+<body data-page="contact">
+<main>
+  <section class="on-dark" style="background:#0A0F1C">
+    <div class="container">
+      <span class="eyebrow" style="color:var(--accent)">Let's talk</span>
+      <h1 class="display">
+        Ready to fill<br />your calendar?
+      </h1>
+      <p style="max-width:720px;font-size:18px;color:rgba(255,255,255,.82)">
+        We work with HVAC, plumbing, electrical, roofing, and contractor businesses across Illinois, Missouri, Iowa, Wisconsin, and Indiana. Fill out the form below and we'll get back to you within 24 hours.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start">
+        <div>
+          <h2 style="margin-top:0">Get in touch</h2>
+          <form>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" required />
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+
+            <div class="form-group">
+              <label for="company">Company Name</label>
+              <input type="text" id="company" name="company" required />
+            </div>
+
+            <div class="form-group">
+              <label for="trade">Trade / Service</label>
+              <select id="trade" name="trade" required>
+                <option value="">Select your trade...</option>
+                <option value="hvac">HVAC</option>
+                <option value="plumbing">Plumbing</option>
+                <option value="electrical">Electrical</option>
+                <option value="roofing">Roofing</option>
+                <option value="general">General Contractor</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="interest">What are you interested in?</label>
+              <select id="interest" name="interest" required>
+                <option value="">Select a service...</option>
+                <option value="websites">Websites</option>
+                <option value="seo">SEO</option>
+                <option value="paid-ads">Paid Ads</option>
+                <option value="social">Social Media</option>
+                <option value="branding">Branding</option>
+                <option value="automation">AI Automations</option>
+                <option value="full-service">Full Service</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Tell us a bit about your business (optional)</label>
+              <textarea id="message" name="message" placeholder="What's your biggest marketing challenge right now?"></textarea>
+            </div>
+
+            <button type="submit" class="btn" style="align-self:flex-start;font-size:15px;padding:18px 40px">Send message</button>
+          </form>
+        </div>
+
+        <div>
+          <h2 style="margin-top:0">Other ways to reach us</h2>
+          
+          <div style="background:var(--ink);padding:32px;color:var(--white);border-radius:8px;margin-bottom:24px">
+            <div class="eyebrow" style="color:var(--accent);margin-bottom:12px">Call us</div>
+            <a href="tel:3099289080" style="display:block;font-size:24px;font-weight:700;color:var(--accent);text-decoration:none;margin-bottom:4px">(309) 928-9080</a>
+            <p style="margin:0;font-size:14px;opacity:.75">Available Mon–Fri, 8am–6pm CST</p>
+          </div>
+
+          <div style="background:var(--ink);padding:32px;color:var(--white);border-radius:8px;margin-bottom:24px">
+            <div class="eyebrow" style="color:var(--accent);margin-bottom:12px">Email</div>
+            <a href="mailto:team@toughjobs.org" style="display:block;font-size:16px;font-weight:700;color:var(--accent);text-decoration:none;margin-bottom:4px">team@toughjobs.org</a>
+            <p style="margin:0;font-size:14px;opacity:.75">We'll respond within 24 hours</p>
+          </div>
+
+          <div style="background:#C8262A;padding:32px;color:var(--white);border-radius:8px">
+            <div class="eyebrow" style="color:rgba(255,255,255,.9);margin-bottom:12px">Want a free consultation?</div>
+            <p style="margin:0 0 16px;font-size:15px">Book a 30-minute strategy call with our team. No pitch. Just honest feedback on your current marketing and what's working in your market.</p>
+            <button class="btn" style="background:var(--white);color:var(--accent);font-weight:800;font-size:13px">Schedule a call →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="on-dark svc-area-band" style="background:#0A0F1C;position:relative;overflow:hidden">
+    <div class="svc-area-glow"></div>
+    <div class="container" style="position:relative;z-index:1">
+      <div style="text-align:center;max-width:720px;margin:0 auto 48px">
+        <span class="eyebrow" style="color:var(--accent)">Who we build for</span>
+        <h2 class="display" style="color:var(--white);margin:14px 0 16px;font-size:clamp(30px,4vw,52px)">Every trade. Five states.<br>Boots on the ground.</h2>
+        <p style="color:rgba(255,255,255,.72);font-size:16px;line-height:1.7;margin:0">If you run a truck and answer a phone, we build the marketing that keeps it ringing. We serve trade businesses of every stripe across the Midwest.</p>
+      </div>
+
+      <div class="trade-chips">
+        <a href="trade-roofing.html" class="trade-chip">Roofing</a>
+        <a href="trade-general-contractors.html" class="trade-chip">General Contractors</a>
+        <a href="trade-concrete-paving.html" class="trade-chip">Concrete &amp; Paving</a>
+        <a href="trade-masonry.html" class="trade-chip">Masonry</a>
+        <a href="trade-framing-drywall.html" class="trade-chip">Framing &amp; Drywall</a>
+        <a href="trade-hvac.html" class="trade-chip">HVAC</a>
+        <a href="trade-plumbing.html" class="trade-chip">Plumbing</a>
+        <a href="trade-electricians.html" class="trade-chip">Electrical</a>
+        <a href="trade-locksmiths.html" class="trade-chip">Locksmiths</a>
+        <a href="trade-solar.html" class="trade-chip">Solar</a>
+        <a href="trade-painters.html" class="trade-chip">Painting</a>
+        <a href="trade-carpet-cleaning.html" class="trade-chip">Carpet Cleaning</a>
+        <a href="trade-pressure-washing.html" class="trade-chip">Pressure Washing</a>
+        <a href="trade-janitorial.html" class="trade-chip">Janitorial</a>
+        <a href="trade-restoration.html" class="trade-chip">Restoration</a>
+        <a href="trade-junk-removal.html" class="trade-chip">Junk Removal</a>
+        <a href="trade-handyman.html" class="trade-chip">Handyman</a>
+        <a href="trade-appliance-repair.html" class="trade-chip">Appliance Repair</a>
+        <a href="trade-landscaping.html" class="trade-chip">Landscaping</a>
+        <a href="trade-tree-service.html" class="trade-chip">Tree Service</a>
+        <a href="trade-pest-control.html" class="trade-chip">Pest Control</a>
+        <a href="trade-pools.html" class="trade-chip">Pools</a>
+      </div>
+
+      <div class="state-strip">
+        <div class="state-head">Serving</div>
+        <div class="state-tiles">
+          <div class="state-tile"><span class="abbr">IL</span><span class="name">Illinois</span></div>
+          <div class="state-tile"><span class="abbr">MO</span><span class="name">Missouri</span></div>
+          <div class="state-tile"><span class="abbr">IA</span><span class="name">Iowa</span></div>
+          <div class="state-tile"><span class="abbr">WI</span><span class="name">Wisconsin</span></div>
+          <div class="state-tile"><span class="abbr">IN</span><span class="name">Indiana</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <style>
+    .svc-area-band{padding:clamp(64px,8vw,104px) 0}
+    .svc-area-glow{position:absolute;top:-30%;left:50%;transform:translateX(-50%);width:900px;height:600px;background:radial-gradient(ellipse at center,rgba(200,38,42,.18) 0%,rgba(200,38,42,0) 68%);pointer-events:none;z-index:0}
+    .trade-chips{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;max-width:960px;margin:0 auto 56px}
+    .trade-chip{font-family:"Archivo",sans-serif;font-weight:700;font-size:13px;letter-spacing:.04em;text-transform:uppercase;color:rgba(255,255,255,.85);text-decoration:none;padding:11px 18px;border:1px solid rgba(255,255,255,.18);border-radius:2px;background:rgba(255,255,255,.03);transition:background .18s ease,border-color .18s ease,color .18s ease,transform .18s ease}
+    .trade-chip:hover{background:var(--accent);border-color:var(--accent);color:#fff;transform:translateY(-2px)}
+    .state-strip{display:flex;align-items:center;justify-content:center;gap:24px;flex-wrap:wrap;padding-top:40px;border-top:1px solid rgba(255,255,255,.12);max-width:960px;margin:0 auto}
+    .state-head{font-family:"Archivo",sans-serif;font-weight:800;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.55)}
+    .state-tiles{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+    .state-tile{display:flex;flex-direction:column;align-items:center;gap:4px;padding:16px 22px;border:1px solid rgba(255,255,255,.14);border-radius:4px;min-width:110px;transition:border-color .18s ease,background .18s ease}
+    .state-tile:hover{border-color:var(--accent);background:rgba(200,38,42,.08)}
+    .state-tile .abbr{font-family:"Archivo Black",sans-serif;font-size:30px;line-height:1;color:var(--accent)}
+    .state-tile .name{font-family:"Archivo",sans-serif;font-weight:600;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.75)}
+    @media(max-width:640px){.state-strip{flex-direction:column;gap:18px}}
+  </style>
+
+  
+</main>
+
+<!-- Footer -->
+
+    <section data-screen-label="Our Endeavors" class="gb-section" style="background:#ECEFF4;background-image:url('assets/white-engineering-background.webp');background-size:cover;background-position:center;padding:56px 32px;position:relative;overflow:hidden;box-shadow:inset 0 2px 2px rgba(0,0,0,.45), inset 0 -2px 2px rgba(0,0,0,.45);">
+    <div style="max-width:1240px;margin:0 auto;position:relative;z-index:1;">
+      <div class="gb-outer" style="display:grid;grid-template-columns:1.5fr 1fr;gap:40px;align-items:center;">
+        <div>
+          <div style="margin-bottom:24px;">
+            <span style="font-family:'Archivo',sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:.16em;font-size:12px;color:#C8262A;">More than marketing</span>
+            <h2 style="font-family:'Archivo Black',sans-serif;text-transform:uppercase;font-size:clamp(32px,3.6vw,50px);line-height:1.02;color:#0A0F1C;margin:12px 0 0;"><span style="color:#C8262A;">Two ways we</span> give back</h2>
+          </div>
+          <div class="gb-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:stretch;">
+            <div class="gb-card" style="background:#002768;padding:36px 30px;box-shadow:0 20px 50px -30px rgba(0,39,104,.5);border-top:4px solid #C8262A;">
+              <span style="font-family:ui-monospace,Menlo,monospace;font-size:12px;letter-spacing:.2em;color:#C8262A;font-weight:700;">01 / PARTNERSHIP</span>
+              <h3 style="font-family:'Archivo Black',sans-serif;text-transform:uppercase;font-size:22px;color:#fff;margin:16px 0 12px;line-height:1.05;">Go independent, backed by us</h3>
+              <p style="font-family:'Archivo',sans-serif;font-size:15px;line-height:1.6;color:rgba(255,255,255,.82);margin:0 0 28px;">You bring the truck, tools, and skill. We hand you the website, brand, systems, and marketing to turn one truck into a real company.</p>
+              <a href="partnerships.html" style="display:inline-block;background:#C8262A;color:#fff;font-family:'Archivo Black',sans-serif;text-transform:uppercase;font-size:13px;letter-spacing:.06em;padding:14px 30px;border-radius:6px;text-decoration:none;">Explore Partnership</a>
+            </div>
+            <div class="gb-card" style="background:#0A0F1C;padding:36px 30px;box-shadow:0 20px 50px -30px rgba(0,39,104,.5);border-top:4px solid #C8262A;">
+              <span style="font-family:ui-monospace,Menlo,monospace;font-size:12px;letter-spacing:.2em;color:#C8262A;font-weight:700;">02 / HELPING HANDS</span>
+              <h3 style="font-family:'Archivo Black',sans-serif;text-transform:uppercase;font-size:22px;color:#fff;margin:16px 0 12px;line-height:1.05;">A hand up when budget is tight</h3>
+              <p style="font-family:'Archivo',sans-serif;font-size:15px;line-height:1.6;color:rgba(255,255,255,.8);margin:0 0 28px;">One day a week we help people with more grit than budget get a business off the ground — honest guidance, real direction, no pressure.</p>
+              <a href="helping-hands.html" style="display:inline-block;background:#C8262A;color:#fff;font-family:'Archivo Black',sans-serif;text-transform:uppercase;font-size:13px;letter-spacing:.06em;padding:14px 30px;border-radius:6px;text-decoration:none;">Explore Helping Hands</a>
+            </div>
+          </div>
+        </div>
+        <div class="gb-img" style="position:relative;height:100%;min-height:420px;">
+          <img src="assets/trade-hero-excavation.webp" alt="Toughjobs tradesman on the job" loading="lazy" decoding="async" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:top center;" />
+        </div>
+      </div>
+    </div>
+    <style>@media(max-width:900px){ .gb-outer{ grid-template-columns:1fr !important; } .gb-grid{ grid-template-columns:1fr !important; } .gb-img{ min-height:280px !important; order:-1; } }</style>
+  </section>
+  <script src="inject-footer.js"></script>
+
+<script src="inject-header.js"></script>
+<script src="accessibility.js"></script>
+<script>
+  document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const formData = new FormData(this);
+    const data = Object.fromEntries(formData);
+    console.log('Form submitted:', data);
+    alert('Thanks for reaching out! We\'ll be in touch within 24 hours.');
+    this.reset();
+  });
+</script>
+<script src="sticky-cta.js"></script>
+<script src="chat-launcher.js"></script>
+<script src="image-finder-tab.js"></script>
+</body>
+</html>
