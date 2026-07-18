@@ -16,8 +16,10 @@
     { n: "07", t: "AI Automations",      href: "ai-automations.html",       d: "Let automations answer, book, and follow up while you're on the tools." },
     { n: "08", t: "Software",            href: "software.html",             d: "Get set up on the field-service platform that fits how your shop runs." },
     { n: "09", t: "Re-Marketing",        href: "database-reactivation.html", d: "Turn your old customer list into booked jobs with email & SMS campaigns." },
-    { n: "10", t: "Coaching",            href: "coaching.html",             d: "Hands-on guidance to run marketing like an owner, not a guessing game." },
-    { n: "11", t: "LLC Filing",          href: "llc-filing.html",           d: "Business formation help — we file your LLC in Illinois or Iowa. Not a law firm." }
+    { n: "10", t: "Reviews & Reputation", href: "reviews.html",              d: "Automated Google review requests that keep 5-star reviews coming in." },
+    { n: "11", t: "Print & Collateral",   href: "print-collateral.html",       d: "Brochures, mailers, door hangers & signs — branded print that gets kept." },
+    { n: "12", t: "Coaching",            href: "coaching.html",             d: "Hands-on guidance to run marketing like an owner, not a guessing game." },
+    { n: "13", t: "LLC Filing",          href: "llc-filing.html",           d: "Business formation help — we file your LLC in Illinois or Iowa. Not a law firm." }
   ];
 
   // current page filename, e.g. "seo.html"

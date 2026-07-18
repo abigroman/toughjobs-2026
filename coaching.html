@@ -1,166 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Toughjobs — Marketing for the Trades</title>
-<meta name="description" content="Toughjobs — Marketing for the Trades — Toughjobs Digital Marketing, marketing built for the trades. Serving Illinois, Iowa, Missouri, Wisconsin and Indiana. Call (309) 928-9080." />
-  <link rel="stylesheet" href="fonts.css">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    :root {
-      --ink: #0A0F1C;
-      --white: #FFFFFF;
-      --accent: #C8262A;
-      --navy: #002768;
-      --gray-bg: #282828;
-      --nav-height: 100px;
-    }
-    body {
-      font-family: "Archivo", sans-serif;
-      background: var(--white);
-      color: var(--ink);
-      line-height: 1.6;
-    }
-    .container { max-width: 1240px; margin: 0 auto; padding: 0 32px; }
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Toughjobs — Coaching | 1-on-1 Business Coaching for Trades Owners</title>
+<meta name="robots" content="index, follow" />
+<meta name="author" content="Toughjobs" />
+<meta name="publisher" content="ToughJobs Digital Marketing" />
 
-    /* ── HEADER ─────────────────────────────────────────────────── */
-    header {
-      background: var(--ink);
-      color: var(--white);
-      position: sticky;
-      top: 0;
-      z-index: 40;
-      height: var(--nav-height);
-      transition: height 0.3s ease;
-      border-bottom: 2px solid rgba(200, 38, 42, .3);
-      width: 100%;
-    }
-    header.scrolled {
-      height: 50px;
-      --nav-height: 50px;
-    }
-    header > div {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 100%;
-      padding: 0 32px;
-      max-width: 100%;
-      margin: 0 auto;
-      width: 100%;
-    }
-    .nav-logo {
-      display: flex;
-      align-items: center;
-      gap: 18px;
-      text-decoration: none;
-      color: var(--white);
-      flex-shrink: 0;
-      transition: all 0.3s ease;
-    }
-    .nav-logo img {
-      height: 100px;
-      width: 150px;
-      object-fit: contain;
-      transition: all 0.3s ease;
-    }
-    header.scrolled .nav-logo img {
-      height: 50px;
-      width: 75px;
-    }
-    .nav-logo-text {
-      font-family: "Archivo Black", sans-serif;
-      font-size: 28px;
-      letter-spacing: 0.01em;
-      line-height: 1.2;
-      text-transform: uppercase;
-      font-weight: 900;
-      transition: font-size 0.3s ease;
-    }
-    header.scrolled .nav-logo-text {
-      font-size: 16px;
-    }
-    .nav-logo-text .tough { color: var(--accent); }
-    .nav-logo-text .jobs { color: var(--white); }
+<meta name="description" content="Business coaching for contractors and trades owners. 1-on-1 coaching on pricing, hiring, systems, marketing and cash flow — month-to-month plans from $249. Serving Illinois, Iowa, Missouri, Wisconsin and Indiana. Call (309) 928-9080." />
+<meta name="keywords" content="business coaching for contractors, trades business coaching, contractor coaching, home services business coach, small business coach for tradesmen, electrician business coaching, HVAC business coach, plumbing business coaching, construction business coaching, trades owner mentorship" />
+<link rel="canonical" href="coaching.html" />
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="service-page.css" />
+<style>
+  *,*::before,*::after{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:#0A0F1C}
+  body{font-family:"Archivo","Helvetica Neue",Helvetica,Arial,sans-serif;color:#0A0F1C;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
+  :root{--ink:#0A0F1C;--navy:#002768;--navy-2:#001a4a;--red:#C8262A;--accent:#C8262A;--smoke:#5B6471;--white:#FFFFFF;--container:1240px}
+  .logo-text span.tight{color:var(--red)}.logo-text span.light{color:var(--white)}
+  header a.logo-link{display:flex;align-items:center;gap:1px;text-decoration:none;color:var(--white);animation:logoSlideIn .65s cubic-bezier(.22,.9,.3,1) .35s backwards}
+  header img{height:auto;width:auto;max-height:70px;object-fit:contain;transition:all .3s ease}
+  header.scrolled img{height:auto;width:auto;max-height:45px}
+  nav.nav-links a.nav-link:hover{color:var(--red);border-bottom-color:var(--red)}
+  .nav-phone:hover{color:var(--red)}
+  header .btn{display:inline-flex;align-items:center;gap:10px;padding:16px 26px;font-family:"Archivo",sans-serif;font-weight:800;letter-spacing:.06em;font-size:13px;text-transform:uppercase;text-decoration:none;background:var(--red);color:var(--white);border:0;cursor:pointer;transition:transform .15s ease,box-shadow .15s ease;white-space:nowrap}
+  header .btn:hover{transform:translate(-2px,-2px);box-shadow:4px 4px 0 var(--ink)}
+  .nav-dropdown-toggle{display:inline-flex;align-items:center;gap:6px}
+  .nav-dropdown-menu > div{display:flex;flex-direction:column;gap:10px}
+  .nav-dropdown-item:hover{color:var(--red)}
+  .nav-quote{background:var(--red);animation:navQuoteIn .65s cubic-bezier(.22,.9,.3,1) .35s backwards}
+  @media(max-width:880px){nav.mega{display:none}}
+  body{--accent2:#002768}
 
-    nav {
-      display: flex;
-      gap: 28px;
-      flex-wrap: nowrap;
-      align-items: center;
-      flex: 1;
-      justify-content: center;
-    }
-    nav a {
-      font-family: "Archivo", sans-serif;
-      font-weight: 700;
-      font-size: 11.5px;
-      letter-spacing: 0.04em;
-      white-space: nowrap;
-      text-transform: uppercase;
-      color: var(--white);
-      text-decoration: none;
-      padding: 8px 0;
-      border-bottom: 2px solid transparent;
-      transition: border-color 0.15s ease, color 0.15s ease;
-    }
-    nav a:hover {
-      color: var(--accent);
-      border-bottom-color: var(--accent);
-    }
-    nav a.active {
-      color: var(--accent);
-      border-bottom-color: var(--accent);
-    }
-
-    .nav-right {
-      display: flex;
-      gap: 28px;
-      align-items: center;
-      margin-left: auto;
-    }
-    .nav-phone {
-      color: var(--white);
-      text-decoration: none;
-      font-family: "Archivo", sans-serif;
-      font-weight: 700;
-      font-size: 13px;
-      letter-spacing: 0.04em;
-      white-space: nowrap;
-    }
-    .btn {
-      background: var(--accent);
-      color: var(--white);
-      padding: 14px 22px;
-      font-size: 12px;
-      font-weight: 800;
-      letter-spacing: 0.08em;
-      white-space: nowrap;
-      text-decoration: none;
-      border: none;
-      cursor: pointer;
-      font-family: "Archivo", sans-serif;
-      text-transform: uppercase;
-    }
-    .btn:hover {
-      opacity: 0.9;
-    }
-
-    main { min-height: 400px; padding: 80px 0; }
-    h1 { font-family: "Archivo Black", sans-serif; font-size: 48px; text-transform: uppercase; margin: 20px 0; }
-    p { margin: 16px 0; }
-
-    /* ── FOOTER ─────────────────────────────────────────────────── */
-    footer {
-      background: var(--ink);
-      color: var(--white);
-      padding: 40px 0;
-      text-align: center;
-      font-size: 13px;
-      margin-top: 80px;
-    }
-  </style>
+  /* ── PRICING ─────────────────────────────────────────── */
+  .price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;align-items:stretch;margin-top:8px}
+  .price-card{position:relative;background:#fff;border:1px solid rgba(10,15,28,.12);border-top:5px solid var(--navy);padding:38px 32px 34px;display:flex;flex-direction:column;box-shadow:0 24px 60px -40px rgba(0,39,104,.5)}
+  .price-card.feat{border-top-color:var(--red);background:var(--ink);color:#fff;transform:translateY(-14px);box-shadow:0 34px 80px -40px rgba(200,38,42,.55)}
+  .price-badge{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--red);color:#fff;font-family:"Archivo Black",sans-serif;text-transform:uppercase;font-size:11px;letter-spacing:.12em;padding:7px 16px;white-space:nowrap}
+  .price-tier{font-family:ui-monospace,Menlo,monospace;font-size:12px;letter-spacing:.2em;font-weight:700;color:var(--red);text-transform:uppercase}
+  .price-name{font-family:"Archivo Black",sans-serif;text-transform:uppercase;font-size:24px;line-height:1.02;margin:14px 0 6px}
+  .price-card .price-name{color:var(--ink)}.price-card.feat .price-name{color:#fff}
+  .price-sub{font-size:14px;line-height:1.5;color:var(--smoke);margin:0 0 22px;min-height:42px}
+  .price-card.feat .price-sub{color:rgba(255,255,255,.72)}
+  .price-amt{display:flex;align-items:baseline;gap:6px;font-family:"Archivo Black",sans-serif;color:var(--navy)}
+  .price-card.feat .price-amt{color:#fff}
+  .price-amt .cur{font-size:24px}.price-amt .num{font-size:52px;line-height:.9}.price-amt .per{font-family:"Archivo",sans-serif;font-weight:700;font-size:14px;color:var(--smoke);letter-spacing:.02em}
+  .price-card.feat .price-amt .per{color:rgba(255,255,255,.65)}
+  .price-note{font-size:12.5px;color:var(--smoke);margin:8px 0 24px;letter-spacing:.02em}
+  .price-card.feat .price-note{color:rgba(255,255,255,.6)}
+  .price-feats{list-style:none;margin:0 0 30px;padding:26px 0 0;border-top:1px solid rgba(10,15,28,.12);display:flex;flex-direction:column;gap:13px;flex:1}
+  .price-card.feat .price-feats{border-top-color:rgba(255,255,255,.16)}
+  .price-feats li{position:relative;padding-left:28px;font-size:14.5px;line-height:1.45}
+  .price-feats li::before{content:"";position:absolute;left:0;top:2px;width:17px;height:17px;background:var(--red);clip-path:polygon(41% 68%,80% 22%,90% 32%,41% 90%,12% 56%,22% 46%)}
+  .price-cta{display:block;text-align:center;background:var(--navy);color:#fff;font-family:"Archivo Black",sans-serif;text-transform:uppercase;font-size:13px;letter-spacing:.06em;padding:16px 22px;text-decoration:none;transition:transform .15s ease,box-shadow .15s ease}
+  .price-cta:hover{transform:translate(-2px,-2px);box-shadow:4px 4px 0 var(--red)}
+  .price-card.feat .price-cta{background:var(--red)}
+  .price-card.feat .price-cta:hover{box-shadow:4px 4px 0 #fff}
+  .price-foot{margin-top:34px;text-align:center;font-size:14px;color:var(--smoke)}
+  @media(max-width:900px){.price-grid{grid-template-columns:1fr;gap:34px}.price-card.feat{transform:none}}
+</style>
+<link rel="stylesheet" href="shared-header.css" />
 <style id="white-texture-sweep">
 /* Engineering blueprint texture on all white surfaces */
 .bg-white, .bg-light, .light-section, .on-light, .blurbs-section {
@@ -171,26 +71,183 @@
   background-attachment:fixed !important;
 }
 </style>
-<style id="white-texture-body">
-body { background-image:url('assets/white-engineering-background.webp') !important; background-size:cover !important; background-position:center !important; background-attachment:fixed !important; background-color:#FFFFFF !important; }
-</style>
-  <link rel="stylesheet" href="shared-header.css" />
 </head>
-<body>
-  <!-- HEADER -->
-  
-
-  <!-- MAIN CONTENT -->
-  <main>
+<body class="sp">
+<main>
+  <!-- HERO -->
+  <section class="bg-dark hero">
+    <div class="tex tex-grid"></div>
     <div class="container">
-      <h1>Page Under Construction</h1>
-      <p>This page is being rebuilt. Please check back soon.</p>
-      <p><a href="index.html">← Back to Home</a></p>
+      <div class="hero-text">
+      <span class="eyebrow accent reveal">1-on-1 business coaching</span>
+      <h1 class="display reveal d1">You're great with the tools.<br><span class="accent2c">Let's fix the business.</span></h1>
+      <p class="lede reveal d2">Straight-talk coaching for trades owners who are drowning in the day-to-day. Pricing, hiring, marketing, systems, and the numbers — from someone who's built companies, not read about them.</p>
+      <div class="reveal d3"><a class="btn" href="#pricing">See coaching plans &rarr;</a></div>
+      <div class="kpis"><div class="kpi reveal"><div class="num"><span data-count="2">0</span><span class="suf">×</span></div><div class="lbl">Avg. revenue in 12 mo.</div></div><div class="kpi reveal"><div class="num"><span data-count="15">0</span><span class="suf">hrs</span></div><div class="lbl">Back per week</div></div><div class="kpi reveal"><div class="num"><span data-count="90">0</span><span class="suf">day</span></div><div class="lbl">First plan in motion</div></div></div>
+      </div>
+      <div class="hero-img-slot"><span class="num">09</span><span class="lbl">Add coaching / owner-on-jobsite photo</span></div>
     </div>
-  </main>
+  </section>
 
-  <!-- FOOTER -->
-  
+  <!-- WHAT YOU GET -->
+  <section class="bg-light">
+    <div class="tex tex-dots-d"></div>
+    <div class="container">
+      <div class="head reveal">
+        <span class="eyebrow">What coaching covers</span>
+        <h2 class="display">Every lever that moves a trades business.</h2>
+        <p class="lede">No fluff, no whiteboard theory. We work on what actually pays the bills.</p>
+      </div>
+      <div class="seo-copy reveal d1" style="max-width:860px;margin:0 auto 46px;font-size:16.5px;line-height:1.72;color:#1c2536">
+        <p style="margin:0 0 18px"><strong>Business coaching for contractors and trades owners</strong> is the fastest way to turn a busy one-truck operation into a business that actually pays you what you're worth. If you're an electrician, plumber, HVAC tech, roofer, concrete contractor, painter, cleaner, or landscaper, you already know the trade cold. The part that keeps owners up at night isn't the work — it's the pricing, the hiring, the marketing, the paperwork, and the feeling that you're working harder every year for the same money. That's exactly the gap Toughjobs coaching closes.</p>
+        <p style="margin:0 0 18px">Our <strong>trades business coaching</strong> is built for home-services companies, not corporate boardrooms. Every session is 1-on-1 with a coach who has actually built and scaled service businesses in the field. We don't hand you a binder of theory and disappear. We sit down with your real numbers, your real jobs, and your real market, then build a plan you can put to work the same week. Whether you need to raise your prices without losing customers, hire your first crew member, build systems so the business runs without you, or finally get your marketing to bring in the right jobs, coaching gives you a clear next step and someone to hold you to it.</p>
+        <p style="margin:0">Most owners try to figure all of this out alone, and it costs them years and tens of thousands of dollars in mistakes. A good <strong>contractor business coach</strong> shortcuts that curve. You get accountability that keeps you moving, honest answers when a decision matters, and a partner who wins when you win. Below is exactly what we work on, the plans and pricing, and answers to the questions trades owners ask most.</p>
+      </div>
+      <div class="flow" style="--steps:4"><div class="step reveal d1"><div class="node">💵</div><h4>Pricing &amp; margins</h4><p>Stop guessing. Build quotes that win the job and still leave real profit on the table.</p></div><div class="step reveal d2"><div class="node">🧭</div><h4>Systems &amp; hiring</h4><p>Document how the work gets done so you can hire, delegate, and take a day off.</p></div><div class="step reveal d3"><div class="node">📣</div><h4>Marketing that pays</h4><p>Where your next 10 jobs come from — and how to stop wasting money on ads that don't.</p></div><div class="step reveal d4"><div class="node">📊</div><h4>Know your numbers</h4><p>Cash flow, job costing, and the handful of metrics that tell you the truth.</p></div></div>
+    </div>
+  </section>
+
+  <!-- BENEFITS -->
+  <section class="bg-navy">
+    <div class="tex tex-dots"></div>
+    <div class="container">
+      <div class="head reveal">
+        <span class="eyebrow">Why owners hire a coach</span>
+        <h2 class="display">Less chaos. Bigger jobs. A real business.</h2>
+      </div>
+      <div class="earn"><div class="card reveal d1"><div class="ic">01</div><h4>Accountability that sticks</h4><p>You'll actually do the things you keep meaning to. Someone in your corner every single week.</p></div><div class="card reveal d2"><div class="ic">02</div><h4>Decisions without the guesswork</h4><p>Hire or hold? Raise prices? Buy the truck? Talk it through with someone who's been there.</p></div><div class="card reveal d3"><div class="ic">03</div><h4>Work fewer hours</h4><p>Build the systems that let the business run when you're not standing on the job.</p></div></div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="bg-light" id="pricing">
+    <div class="tex tex-dots-d"></div>
+    <div class="container">
+      <div class="head reveal">
+        <span class="eyebrow">Coaching plans</span>
+        <h2 class="display">Straight pricing. No retainers you can't get out of.</h2>
+        <p class="lede">Month-to-month. Cancel anytime. Pick the level of support that fits where you're at.</p>
+      </div>
+      <div class="price-grid">
+        <div class="price-card reveal d1">
+          <span class="price-tier">01 / Tune-Up</span>
+          <div class="price-name">Single Session</div>
+          <p class="price-sub">One deep-dive call to break through a specific problem you're stuck on.</p>
+          <div class="price-amt"><span class="cur">$</span><span class="num">249</span><span class="per">one-time</span></div>
+          <div class="price-note">90-minute strategy call</div>
+          <ul class="price-feats">
+            <li>90-minute 1-on-1 video call</li>
+            <li>One problem, solved end-to-end</li>
+            <li>Written action plan afterward</li>
+            <li>Recording of the session</li>
+            <li>7 days of follow-up by text</li>
+          </ul>
+          <a class="price-cta" href="contact.html">Book a session &rarr;</a>
+        </div>
+        <div class="price-card feat reveal d2">
+          <span class="price-badge">Most Popular</span>
+          <span class="price-tier">02 / Foreman</span>
+          <div class="price-name">Monthly Coaching</div>
+          <p class="price-sub">Two calls a month plus week-to-week accountability. The workhorse plan.</p>
+          <div class="price-amt"><span class="cur">$</span><span class="num">595</span><span class="per">/ month</span></div>
+          <div class="price-note">No contract — cancel anytime</div>
+          <ul class="price-feats">
+            <li>Two 60-min coaching calls / month</li>
+            <li>Direct text &amp; email access</li>
+            <li>Pricing, hiring &amp; systems playbooks</li>
+            <li>Quarterly numbers &amp; goal review</li>
+            <li>Priority on marketing questions</li>
+            <li>Everything in the Single Session</li>
+          </ul>
+          <a class="price-cta" href="contact.html">Start coaching &rarr;</a>
+        </div>
+        <div class="price-card reveal d3">
+          <span class="price-tier">03 / Master</span>
+          <div class="price-name">Full Partner</div>
+          <p class="price-sub">Hands-on help for owners scaling past their first crew. Limited spots.</p>
+          <div class="price-amt"><span class="cur">$</span><span class="num">1,450</span><span class="per">/ month</span></div>
+          <div class="price-note">Application required · 4 clients max</div>
+          <ul class="price-feats">
+            <li>Weekly 1-on-1 calls</li>
+            <li>On-call access, same-day answers</li>
+            <li>We build your systems with you</li>
+            <li>Marketing plan built &amp; managed</li>
+            <li>Hiring &amp; interview support</li>
+            <li>Everything in Monthly Coaching</li>
+          </ul>
+          <a class="price-cta" href="contact.html">Apply now &rarr;</a>
+        </div>
+      </div>
+      <p class="price-foot">Not sure which fits? <a href="contact.html" style="color:var(--red);font-weight:800;text-decoration:none">Book a free 20-minute intro call</a> and we'll point you straight.</p>
+    </div>
+  </section>
+
+  <!-- COMPARE -->
+  <section class="bg-navy">
+    <div class="tex tex-dots"></div>
+    <div class="container">
+      <div class="head reveal">
+        <span class="eyebrow">Why not go it alone?</span>
+        <h2 class="display">Figuring it out solo vs. Toughjobs coaching.</h2>
+        <p class="lede">What the slow road actually costs you.</p>
+      </div>
+      <div class="cmp-wrap reveal d1">
+        <table class="cmp">
+          <thead><tr><th></th><th>Going it alone</th><th>Big-name guru program</th><th class="tj"><span class="tjhead">Toughjobs</span></th></tr></thead>
+          <tbody><tr><td class="rowlbl">Built for the trades</td><td class="x">You improvise</td><td>Generic business fluff</td><td class="tj"><span class="yes">100% trades</span></td></tr><tr><td class="rowlbl">Cost</td><td class="x">Costly mistakes</td><td>$10k–25k up front</td><td class="tj">$249–1,450/mo</td></tr><tr><td class="rowlbl">Contract lock-in</td><td class="x">—</td><td>6–12 months</td><td class="tj"><span class="yes">Month-to-month</span></td></tr><tr><td class="rowlbl">Talk to the actual coach</td><td class="x">No</td><td>A "success rep"</td><td class="tj"><span class="yes">Every call</span></td></tr><tr><td class="rowlbl">Real accountability</td><td class="x">Willpower only</td><td>Group calls</td><td class="tj"><span class="yes">1-on-1, weekly</span></td></tr></tbody>
+        </table>
+      </div>
+      <p class="cmp-note">You can absolutely figure it out alone — most owners do, eventually. Coaching just gets you there years faster and a lot less broke.</p>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="bg-light">
+    <div class="tex tex-dots-d"></div>
+    <div class="container">
+      <div class="head reveal">
+        <span class="eyebrow">From the field</span>
+        <h2 class="display">Owners who stopped spinning their wheels.</h2>
+      </div>
+      <div class="tess"><div class="t reveal"><p class="q">&ldquo;Raised my prices 20% in the first month like he said. Booked more work, not less. Wish I'd done it two years ago.&rdquo;</p><div class="who"><div class="av">👨</div><div><div class="nm">Danny R.</div><div class="rl">Concrete &amp; paving, Moline IL</div></div></div></div><div class="t reveal"><p class="q">&ldquo;Finally hired my first two guys and didn't lose my mind doing it. The systems we built actually run without me.&rdquo;</p><div class="who"><div class="av">👩</div><div><div class="nm">Marie T.</div><div class="rl">Cleaning company, Davenport IA</div></div></div></div></div>
+
+      <div class="head reveal" style="margin-top:72px">
+        <span class="eyebrow">Common questions</span>
+        <h2 class="display">Trades business coaching FAQ.</h2>
+      </div>
+      <div class="faq reveal d1" style="max-width:900px;margin:0 auto;font-size:16px;line-height:1.7;color:#1c2536">
+        <div style="padding:22px 0;border-top:1px solid rgba(10,15,28,.14)">
+          <h3 style="font-family:'Archivo Black',sans-serif;text-transform:uppercase;font-size:19px;color:#0A0F1C;margin:0 0 8px">What is business coaching for contractors?</h3>
+          <p style="margin:0">It's 1-on-1 guidance focused on the business side of your trade — pricing, profit margins, hiring, systems, cash flow, and marketing. Instead of learning every lesson the hard way, you work with a coach who has already built service businesses and can point you straight at what will grow your revenue and buy back your time.</p>
+        </div>
+        <div style="padding:22px 0;border-top:1px solid rgba(10,15,28,.14)">
+          <h3 style="font-family:'Archivo Black',sans-serif;text-transform:uppercase;font-size:19px;color:#0A0F1C;margin:0 0 8px">How much does a trades business coach cost?</h3>
+          <p style="margin:0">Toughjobs coaching starts at $249 for a single 90-minute strategy session. Ongoing monthly coaching is $595 per month for two calls plus week-to-week accountability, and our hands-on Full Partner plan is $1,450 per month. Every plan is month-to-month with no long contracts.</p>
+        </div>
+        <div style="padding:22px 0;border-top:1px solid rgba(10,15,28,.14)">
+          <h3 style="font-family:'Archivo Black',sans-serif;text-transform:uppercase;font-size:19px;color:#0A0F1C;margin:0 0 8px">Which trades do you coach?</h3>
+          <p style="margin:0">We coach owners across the home-services trades — electricians, plumbers, HVAC, roofing, concrete and paving, painting, cleaning, landscaping, excavation, remodeling and general contracting. If you run a service business and want it to grow, coaching applies.</p>
+        </div>
+        <div style="padding:22px 0;border-top:1px solid rgba(10,15,28,.14);border-bottom:1px solid rgba(10,15,28,.14)">
+          <h3 style="font-family:'Archivo Black',sans-serif;text-transform:uppercase;font-size:19px;color:#0A0F1C;margin:0 0 8px">How fast will I see results?</h3>
+          <p style="margin:0">Most owners walk away from the first session with pricing or workflow changes they can make immediately. Bigger wins — a hired crew, systems that run without you, a marketing engine that fills the schedule — typically take shape over the first 90 days of ongoing coaching.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-accent2 ctaband">
+    <div class="tex tex-grid"></div>
+    <div class="container">
+      <h2 class="display reveal">Your competition isn't smarter. They're just organized.</h2>
+      <p class="reveal d1">Get a coach who's built trades businesses in your corner. Start with a free intro call — no pitch, no pressure.</p>
+      <div class="reveal d2"><a class="btn" href="contact.html">Book your free intro call &rarr;</a></div>
+    </div>
+  </section>
+</main>
+
+
     <section data-screen-label="Our Endeavors" class="gb-section" style="background:#ECEFF4;background-image:url('assets/white-engineering-background.webp');background-size:cover;background-position:center;padding:56px 32px;position:relative;overflow:hidden;box-shadow:inset 0 2px 2px rgba(0,0,0,.45), inset 0 -2px 2px rgba(0,0,0,.45);">
     <div style="max-width:1240px;margin:0 auto;position:relative;z-index:1;">
       <div class="gb-outer" style="display:grid;grid-template-columns:1.5fr 1fr;gap:40px;align-items:center;">
@@ -222,18 +279,18 @@ body { background-image:url('assets/white-engineering-background.webp') !importa
     <style>@media(max-width:900px){ .gb-outer{ grid-template-columns:1fr !important; } .gb-grid{ grid-template-columns:1fr !important; } .gb-img{ min-height:280px !important; order:-1; } }</style>
   </section>
 
-<footer>
-    <div class="container">
-      <p>&copy; 2026 Toughjobs · Marketing for the Trades · (309) 928-9080</p>
-    </div>
-  </footer>
+<footer style="background:var(--ink);color:#fff;padding:48px 0;text-align:center">
+  <div class="container" style="max-width:var(--container);margin:0 auto;padding:0 22px"><p style="margin:0;font-size:13px;color:rgba(255,255,255,.6);letter-spacing:.04em">&copy; 2026 Toughjobs &middot; Marketing for the Trades &middot; (309) 928-9080</p></div>
+</footer>
 
-  <script>
-    const navHeader = document.getElementById('nav-header');
-  </script>
-<script src="sticky-cta.js"></script>
-<script src="back-cta.js"></script>
+<script src="trade-data.js"></script>
+<script src="service-page.js"></script>
+<script src="sticky-cta-back.js"></script>
+<script src="flying-tools.js"></script>
 <script src="inject-header.js"></script>
+<script src="sticky-cta.js"></script>
+<script src="cookie-consent.js"></script>
+<script src="chat-launcher.js"></script>
 <script src="all-services-section.js"></script>
 <script src="accessibility.js"></script>
 <script src="image-finder-tab.js"></script>

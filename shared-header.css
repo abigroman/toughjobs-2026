@@ -27,7 +27,8 @@ header {
   height: 120px;
   transition: height 0.3s ease;
   width: 100%;
-  padding: 0 32px;
+  padding: 0 clamp(18px, 3vw, 32px);
+  max-width: 100%;
 }
 
 .logo-link {
@@ -40,11 +41,12 @@ header {
 }
 
 .logo-link img {
-  height: 100px;
-  width: 150px;
+  height: auto;
+  width: clamp(190px, 20vw, 300px);
   transition: all 0.3s ease;
   display: block;
   object-fit: contain;
+  max-width: 100%;
 }
 
 .logo-text {
@@ -162,7 +164,7 @@ header {
   display: block;
 }
 
-.nav-dropdown-item:hover { color: var(--red); }
+.nav-dropdown-item:hover { color: var(--white); }
 
 .nav-right {
   display: flex;
@@ -253,11 +255,13 @@ header .btn:active { transform: translateY(1px); }
 .md-cta { background: var(--accent); color: var(--white) !important; text-align: center; margin-top: 16px; border: 0 !important; padding: 16px !important; }
 .md-cta:hover { filter: brightness(.92); color: var(--white) !important; }
 
-@media (max-width: 880px) {
+@media (max-width: 1080px) {
   .nav-links { display: none !important; }
   .nav-dropdown-menu { display: none !important; }
   .nav-right .nav-phone, .nav-right .btn { display: none; }
   .nav-toggle { display: flex; }
-  .nav-container { height: 88px; }
-  .logo-link img { height: 64px; width: 96px; }
+}
+@media (max-width: 640px) {
+  .nav-container { height: 84px; padding: 0 18px; }
+  .logo-link img { width: clamp(150px, 46vw, 200px); }
 }

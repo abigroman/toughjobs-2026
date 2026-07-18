@@ -81,13 +81,7 @@ function initHeaderInteractions() {
     
     if (!toggle || !menu) return;
 
-    // Close when clicking a link in the dropdown
-    const items = menu.querySelectorAll('a');
-    items.forEach(item => {
-      item.addEventListener('click', () => {
-        menu.style.display = 'none';
-      });
-    });
+
   });
 
   // Close dropdowns when clicking outside

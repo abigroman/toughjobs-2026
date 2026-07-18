@@ -202,7 +202,7 @@
   panel.innerHTML = `
     <div class="a11y-header">
       <button class="a11y-close" aria-label="Close accessibility menu">&times;</button>
-      <div class="a11y-badge"><img src="assets/accessibility-logo.png" alt=""></div>
+      <div class="a11y-badge"><img src="assets/accessibility-logo.webp" alt=""></div>
       <h2 class="a11y-title">Accessibility<br>Adjustments</h2>
       <button class="a11y-sub" data-close>Hide Toolbar</button>
     </div>
@@ -293,7 +293,7 @@
     btn.className = 'accessibility-btn';
     btn.setAttribute('aria-label', 'Accessibility');
     btn.setAttribute('title', 'Accessibility');
-    btn.innerHTML = '<img src="assets/accessibility-logo.png" alt="Accessibility" style="width:100%;height:100%;object-fit:contain;" />';
+    btn.innerHTML = '<img src="assets/accessibility-logo.webp" alt="Accessibility" style="width:100%;height:100%;object-fit:contain;" />';
     document.body.appendChild(btn);
   }
   var closeBtn = panel.querySelector('.a11y-close');

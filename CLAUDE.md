@@ -49,6 +49,9 @@ Do NOT edit anything inside `_LOCKED/` — it is the backup of last resort.
 - Ink backgrounds (`#0A0F1C`) → use white or red text ONLY.
 - White backgrounds → use navy, ink, or red text.
 - Always test: text must have strong, visible contrast with its background. Blue-on-blue or any color-on-similar-color is unreadable and must be fixed immediately.
+- **Never use the navy accent (`.accent2c` / `#002768`) for text on ink or navy backgrounds** — it disappears. On dark heroes and dark sections, accent/highlight words must be RED (`#C8262A`) or WHITE. Reserve navy-colored text for white/light backgrounds only.
+
+**White containers on white/light backgrounds must have a drop shadow.** Any white (or near-white) card, box, or container sitting on a white or light-textured background needs `box-shadow:0 0 2px 0 rgba(10,15,28,.35)` (a subtle 2px-blur shadow) so its edges separate from the background. Never place a white container on a white background with no shadow — it visually disappears.
 
 ## Project Structure
 ```

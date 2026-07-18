@@ -4,7 +4,7 @@
 .sp section{padding:clamp(72px,9vw,128px) 0;position:relative;overflow:hidden}
 .sp .container{max-width:var(--container);margin:0 auto;padding:0 22px;position:relative;z-index:2}
 header .container{padding:0}
-.sp .bg-dark{background:#0B1326;background-image:url('assets/blueprint-bg-darker.png');background-attachment:fixed;background-size:cover;background-position:center;color:var(--white)}
+.sp .bg-dark{background:#0B1326;background-image:url('assets/blueprint-bg-darker.webp');background-attachment:fixed;background-size:cover;background-position:center;color:var(--white)}
 .sp .bg-navy{background:linear-gradient(160deg,var(--navy) 0%,var(--navy-2) 100%);background-image:url('assets/blueprint-background.webp');background-attachment:fixed;background-size:cover;background-position:center;color:var(--white)}
 .sp .bg-light{background:#F4F5F7;color:var(--ink);background-image:radial-gradient(circle at 1px 1px,rgba(10,15,28,.08) 1px,transparent 1px);background-size:24px 24px;background-position:0 0,12px 12px}
 .sp .bg-accent2{background:linear-gradient(160deg,var(--accent2) 0%,#124a9e 100%);background-image:url('assets/blueprint-background.webp');background-attachment:fixed;background-size:cover;background-position:center;background-blend-mode:multiply;color:var(--white)}

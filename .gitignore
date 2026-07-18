@@ -17,6 +17,10 @@ desktop.ini
 .idea/
 *.swp
 
+# Tool state / thumbnails
+.image-slots.state.json
+.thumbnail
+
 # Node (in case a build gets added later)
 node_modules/
 .env

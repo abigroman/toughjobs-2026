@@ -4,6 +4,11 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Contact — Toughjobs | Marketing for the Trades</title>
+<meta name="robots" content="index, follow" />
+<meta name="author" content="Toughjobs" />
+<meta name="publisher" content="ToughJobs Digital Marketing" />
+<link rel="canonical" href="https://toughjobs.org/contact.html" />
+
 <meta name="description" content="Contact — Toughjobs Digital Marketing, marketing built for the trades. Serving Illinois, Iowa, Missouri, Wisconsin and Indiana. Call (309) 928-9080." />
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <style>
@@ -25,7 +30,7 @@
   .on-dark{color:var(--white)}
   .on-dark h1,.on-dark h2,.on-dark h3{color:var(--white)}
   .on-dark p{color:rgba(255,255,255,.82)}
-  form{max-width:600px;display:flex;flex-direction:column;gap:20px}
+  form{max-width:600px;display:flex;flex-direction:column;gap:20px;filter:drop-shadow(0 0 2px rgba(0,0,0,.15))}
   .form-group{display:flex;flex-direction:column}
   label{font-family:"Archivo",sans-serif;font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.04em;margin-bottom:8px}
   input,textarea,select{font-family:inherit;padding:14px 16px;border:1px solid #D0D0D0;border-radius:4px;font-size:15px}
@@ -35,6 +40,9 @@
   @media(max-width:640px){
     .form-row{grid-template-columns:1fr}
   }
+  @media(max-width:860px){
+    .contact-cols{grid-template-columns:1fr;gap:48px}
+  }
 </style>
 <link rel="stylesheet" href="shared-header.css" />
 <style id="header-logo-fix">header .logo-img{width:150px;height:100px}</style>
@@ -43,7 +51,7 @@
 /* Engineering blueprint texture on all white surfaces */
 .bg-white, .bg-light, .light-section, .on-light, .blurbs-section {
   background-color:#FFFFFF !important;
-  background-image:url('assets/white-engineering-background.webp') !important;
+  background-image:url('assets/white-engineering-background.png') !important;
   background-size:cover !important;
   background-position:center !important;
   background-attachment:fixed !important;
@@ -52,8 +60,12 @@
 </head>
 <body data-page="contact">
 <main>
-  <section class="on-dark" style="background:#0A0F1C">
-    <div class="container">
+  <section class="on-dark" style="background:#0A0F1C;position:relative;overflow:hidden">
+    <video autoplay loop muted playsinline style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;opacity:.35">
+      <source src="uploads/welder-video.mp4" type="video/mp4" />
+    </video>
+    <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,15,28,.92) 0%,rgba(10,15,28,.55) 100%);z-index:1"></div>
+    <div class="container" style="position:relative;z-index:2">
       <span class="eyebrow" style="color:var(--accent)">Let's talk</span>
       <h1 class="display">
         Ready to fill<br />your calendar?
@@ -64,9 +76,9 @@
     </div>
   </section>
 
-  <section>
+  <section style="background-image:url('assets/black-schematics.webp');background-size:contain;background-position:center;background-repeat:no-repeat;background-attachment:fixed;background-color:#f5f5f5">
     <div class="container">
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start">
+      <div class="contact-cols" style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start">
         <div>
           <h2 style="margin-top:0">Get in touch</h2>
           <form>
@@ -135,19 +147,19 @@
         <div>
           <h2 style="margin-top:0">Other ways to reach us</h2>
           
-          <div style="background:var(--ink);padding:32px;color:var(--white);border-radius:8px;margin-bottom:24px">
+          <div style="background:var(--ink);padding:32px;color:var(--white);border-radius:8px;margin-bottom:24px;filter:drop-shadow(0 0 2px rgba(0,0,0,.15))">
             <div class="eyebrow" style="color:var(--accent);margin-bottom:12px">Call us</div>
             <a href="tel:3099289080" style="display:block;font-size:24px;font-weight:700;color:var(--accent);text-decoration:none;margin-bottom:4px">(309) 928-9080</a>
-            <p style="margin:0;font-size:14px;opacity:.75">Available Mon–Fri, 8am–6pm CST</p>
+            <p style="margin:0;font-size:14px;opacity:.75">Available 7 days a week, 8am–6pm CST</p>
           </div>
 
-          <div style="background:var(--ink);padding:32px;color:var(--white);border-radius:8px;margin-bottom:24px">
+          <div style="background:var(--ink);padding:32px;color:var(--white);border-radius:8px;margin-bottom:24px;filter:drop-shadow(0 0 2px rgba(0,0,0,.15))">
             <div class="eyebrow" style="color:var(--accent);margin-bottom:12px">Email</div>
             <a href="mailto:team@toughjobs.org" style="display:block;font-size:16px;font-weight:700;color:var(--accent);text-decoration:none;margin-bottom:4px">team@toughjobs.org</a>
             <p style="margin:0;font-size:14px;opacity:.75">We'll respond within 24 hours</p>
           </div>
 
-          <div style="background:#C8262A;padding:32px;color:var(--white);border-radius:8px">
+          <div style="background:#C8262A;padding:32px;color:var(--white);border-radius:8px;filter:drop-shadow(0 0 2px rgba(0,0,0,.15))">
             <div class="eyebrow" style="color:rgba(255,255,255,.9);margin-bottom:12px">Want a free consultation?</div>
             <p style="margin:0 0 16px;font-size:15px">Book a 30-minute strategy call with our team. No pitch. Just honest feedback on your current marketing and what's working in your market.</p>
             <button class="btn" style="background:var(--white);color:var(--accent);font-weight:800;font-size:13px">Schedule a call →</button>
