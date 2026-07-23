@@ -6,7 +6,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/v1-quad-cities/assets/fonts/archivo-v25-latin-400.woff2') format('woff2');
+  src: url('assets/fonts/archivo-v25-latin-400.woff2') format('woff2');
 }
 
 /* Archivo - 500 (Medium) */
@@ -15,7 +15,7 @@
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url('/v1-quad-cities/assets/fonts/archivo-v25-latin-500.woff2') format('woff2');
+  src: url('assets/fonts/archivo-v25-latin-500.woff2') format('woff2');
 }
 
 /* Archivo - 600 (SemiBold) */
@@ -24,7 +24,7 @@
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url('/v1-quad-cities/assets/fonts/archivo-v25-latin-600.woff2') format('woff2');
+  src: url('assets/fonts/archivo-v25-latin-600.woff2') format('woff2');
 }
 
 /* Archivo - 700 (Bold) */
@@ -33,7 +33,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url('/v1-quad-cities/assets/fonts/archivo-v25-latin-700.woff2') format('woff2');
+  src: url('assets/fonts/archivo-v25-latin-700.woff2') format('woff2');
 }
 
 /* Archivo - 800 (ExtraBold) */
@@ -42,7 +42,7 @@
   font-style: normal;
   font-weight: 800;
   font-display: swap;
-  src: url('/v1-quad-cities/assets/fonts/archivo-v25-latin-800.woff2') format('woff2');
+  src: url('assets/fonts/archivo-v25-latin-800.woff2') format('woff2');
 }
 
 /* Archivo Black - 400 */
@@ -51,5 +51,5 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/v1-quad-cities/assets/fonts/archivo-v25-latin-800.woff2') format('woff2');
+  src: url('assets/fonts/archivo-v25-latin-800.woff2') format('woff2');
 }

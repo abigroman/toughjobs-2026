@@ -557,6 +557,10 @@
       gap: 8px;
     }
   }
+  .partner-wanted-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin: 0 0 40px; }
+  @media(max-width: 760px) {
+    .partner-wanted-grid { grid-template-columns: 1fr; }
+  }
 </style>
 <style id="white-texture-sweep">
 /* Engineering blueprint texture on all white surfaces */
@@ -568,6 +572,7 @@
   background-attachment:fixed !important;
 }
 </style>
+<style>html,body{overflow-x:hidden}</style>
 </head>
 <body>
 
@@ -712,7 +717,7 @@
       <p style="font-size: 18px; line-height: 1.7; color: rgba(255,255,255,0.85); margin: 0 0 32px;">
         Toughjobs is always looking to find partnerships that will strengthen our company and the trades we serve. Right now, we're actively looking to connect with:
       </p>
-      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin: 0 0 40px;">
+      <div class="partner-wanted-grid">
         <div style="background: #10192B; border: 1px solid rgba(255,255,255,0.14); padding: 28px 26px;">
           <h3 style="font-family: 'Archivo Black', sans-serif; font-size: 18px; color: var(--accent); margin: 0;">Automotive Mechanics</h3>
         </div>

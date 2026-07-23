@@ -142,6 +142,10 @@
       color: var(--accent);
       font-weight: 700;
     }
+
+    @media (max-width: 700px) {
+      .capabilities-grid { grid-template-columns: 1fr; }
+    }
     
     .reasons-grid {
       display: grid;
@@ -234,6 +238,7 @@
 <style id="white-texture-body">
 body { background-image:url('assets/white-engineering-background.webp') !important; background-size:cover !important; background-position:center !important; background-attachment:fixed !important; background-color:#FFFFFF !important; }
 </style>
+<style>html,body{overflow-x:hidden}</style>
 </head>
 <body>
 <style>.accessibility-btn{opacity:0}</style>

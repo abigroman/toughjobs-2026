@@ -260,17 +260,27 @@
       .hero-grid { grid-template-columns: 1fr !important; }
       .hero-grid .hero-img { display: none; }
     }
+
+    .software-compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: end; margin-bottom: 48px; }
+    .software-cards-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .paid-platform-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; margin-bottom: 48px; }
+    @media(max-width: 760px) {
+      .software-compare-grid { grid-template-columns: 1fr; }
+      .software-cards-grid { grid-template-columns: 1fr; }
+      .paid-platform-grid { grid-template-columns: 1fr; }
+    }
   </style>
   <link rel="stylesheet" href="shared-header.css" />
   <style id="white-texture-sweep">
   .bg-white, .bg-light, .light-section, .on-light, .blurbs-section {
     background-color:#FFFFFF !important;
-    background-image:url('assets/white-engineering-background.png') !important;
+    background-image:url('assets/white-engineering-background.webp') !important;
     background-size:cover !important;
     background-position:center !important;
     background-attachment:fixed !important;
   }
   </style>
+<style>html,body{overflow-x:hidden}</style>
 </head>
 <body>
   
@@ -395,7 +405,7 @@
         <h2 class="display split" style="font-size:clamp(40px,5vw,72px);margin:16px 0 32px;max-width:900px">
           <span class="a">Ads that </span><span class="b">respect your CPL</span><span class="m"> (Cost Per Lead).</span>
         </h2>
-        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:48px">
+        <div class="paid-platform-grid">
           <div style="background:var(--ink);padding:28px 24px;color:var(--white);min-height:180px;display:flex;flex-direction:column"><div class="eyebrow" style="margin-bottom:12px">Platform 1</div><div class="display" style="font-size:24px;margin-bottom:12px">Google Ads</div><div style="font-size:14px;line-height:1.5;opacity:.82;flex:1">High-intent search ("emergency plumber")</div></div>
           <div style="background:var(--ink);padding:28px 24px;color:var(--white);min-height:180px;display:flex;flex-direction:column"><div class="eyebrow" style="margin-bottom:12px">Platform 2</div><div class="display" style="font-size:24px;margin-bottom:12px">Bing Ads</div><div style="font-size:14px;line-height:1.5;opacity:.82;flex:1">20% cheaper CPCs, older homeowners</div></div>
           <div style="background:var(--ink);padding:28px 24px;color:var(--white);min-height:180px;display:flex;flex-direction:column"><div class="eyebrow" style="margin-bottom:12px">Platform 3</div><div class="display" style="font-size:24px;margin-bottom:12px">Meta (FB/IG)</div><div style="font-size:14px;line-height:1.5;opacity:.82;flex:1">Retargeting + awareness in target zip codes</div></div>
@@ -467,14 +477,14 @@
     <!-- Software -->
     <section id="software" data-screen-label="Software" class="section-equal bg-blueprint-navy bp-section" data-mark-color="rgba(140,170,220,.28)" data-stamp-color="rgba(140,170,220,.45)" data-dwg="SVC-08" data-sheet="SOFTWARE" data-scale="1:1">
       <div class="container" style="position:relative;z-index:2">
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:end;margin-bottom:48px">
+        <div class="software-compare-grid">
           <div>
             <span class="eyebrow">Run a tighter shop</span>
             <h2 class="display split" style="font-size:clamp(40px,5vw,72px);margin:16px 0 0"><span class="a">Get </span><span class="b">organized.</span></h2>
           </div>
           <p style="color:var(--white);margin:0">Marketing fills the calendar. Software keeps it from falling apart. We set you up on the field-service platform that fits your shop — here's how the two best stack up.</p>
         </div>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px">
+        <div class="software-cards-grid">
           <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.15);padding:32px;display:flex;flex-direction:column">
             <span class="eyebrow">Best for growing crews</span>
             <h3 class="display" style="font-size:40px;margin:8px 0 4px;color:var(--white)">Jobber</h3>

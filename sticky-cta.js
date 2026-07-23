@@ -49,7 +49,7 @@
   .tj-cta-badge:focus-visible { outline: 3px solid #FFFFFF; outline-offset: 3px; border-radius: 50%; }
   .tj-cta-badge svg { width: 100%; height: 100%; display: block; overflow: visible; }
   @keyframes tj-cta-in {
-    from { opacity: 0; transform: translate(20px,-20px); }
+    from { opacity: 0; transform: translate(0,-20px); }
     to   { opacity: 1; transform: translate(0,0); }
   }
   @keyframes tj-cta-spin {

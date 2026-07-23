@@ -36,7 +36,8 @@
   .category { margin-bottom:56px; }
   .category h2 { font-family:"Archivo Black", sans-serif; font-size:22px; text-transform:uppercase; letter-spacing:-0.01em; color:var(--navy); border-bottom:3px solid var(--accent); padding-bottom:14px; margin-bottom:4px; }
   .category .count { font-size:12px; color:rgba(10,15,28,.5); font-weight:700; text-transform:uppercase; letter-spacing:.05em; }
-  table { width:100%; border-collapse:collapse; margin-top:16px; }
+  .table-scroll { overflow-x:auto; margin-top:16px; }
+  table { width:100%; border-collapse:collapse; }
   thead th { text-align:left; font-size:11px; text-transform:uppercase; letter-spacing:.06em; color:rgba(10,15,28,.5); font-weight:800; padding:10px 12px; border-bottom:2px solid var(--ink); }
   tbody tr { border-bottom:1px solid rgba(10,15,28,.1); }
   tbody tr:hover { background:#f7f7f7; }
@@ -58,6 +59,7 @@
   footer p { font-size:13px; opacity:.7; }
   footer a { color:var(--white); opacity:.85; }
 </style>
+<style>html,body{overflow-x:hidden}</style>
 </head>
 <body>
 
@@ -177,7 +179,10 @@ fetch('sitemap-manifest.json').then(r => r.json()).then(manifest => {
         tbody.appendChild(tr);
       });
       table.appendChild(tbody);
-      section.appendChild(table);
+      const scrollWrap = document.createElement('div');
+      scrollWrap.className = 'table-scroll';
+      scrollWrap.appendChild(table);
+      section.appendChild(scrollWrap);
       container.appendChild(section);
     });
     if (!totalShown) {

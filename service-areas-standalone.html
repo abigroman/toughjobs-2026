@@ -11,6 +11,7 @@
 
 <meta name="description" content="Toughjobs — Marketing for the Trades — Toughjobs Digital Marketing, marketing built for the trades. Serving Illinois, Iowa, Missouri, Wisconsin and Indiana. Call (309) 928-9080." />
   <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="shared-header.css" />
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     :root {
@@ -28,129 +29,6 @@
       line-height: 1.6;
     }
     .container { max-width: 1240px; margin: 0 auto; padding: 0 32px; }
-
-    /* ── HEADER ─────────────────────────────────────────────────── */
-    header {
-      background: var(--ink);
-      color: var(--white);
-      position: sticky;
-      top: 0;
-      z-index: 40;
-      height: var(--nav-height);
-      transition: height 0.3s ease;
-      border-bottom: 2px solid rgba(200, 38, 42, .3);
-      width: 100%;
-    }
-    header.scrolled {
-      height: 50px;
-      --nav-height: 50px;
-    }
-    header > div {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 100%;
-      padding: 0 32px;
-      max-width: 100%;
-      margin: 0 auto;
-      width: 100%;
-    }
-    .nav-logo {
-      display: flex;
-      align-items: center;
-      gap: 18px;
-      text-decoration: none;
-      color: var(--white);
-      flex-shrink: 0;
-      transition: all 0.3s ease;
-    }
-    .nav-logo img {
-      height: 100px;
-      width: 150px;
-      object-fit: contain;
-      transition: all 0.3s ease;
-    }
-    header.scrolled .nav-logo img {
-      height: 50px;
-      width: 75px;
-    }
-    .nav-logo-text {
-      font-family: "Archivo Black", sans-serif;
-      font-size: 28px;
-      letter-spacing: 0.01em;
-      line-height: 1.2;
-      text-transform: uppercase;
-      font-weight: 900;
-      transition: font-size 0.3s ease;
-    }
-    header.scrolled .nav-logo-text {
-      font-size: 16px;
-    }
-    .nav-logo-text .tough { color: var(--accent); }
-    .nav-logo-text .jobs { color: var(--white); }
-
-    nav {
-      display: flex;
-      gap: 28px;
-      flex-wrap: nowrap;
-      align-items: center;
-      flex: 1;
-      justify-content: center;
-    }
-    nav a {
-      font-family: "Archivo", sans-serif;
-      font-weight: 700;
-      font-size: 11.5px;
-      letter-spacing: 0.04em;
-      white-space: nowrap;
-      text-transform: uppercase;
-      color: var(--white);
-      text-decoration: none;
-      padding: 8px 0;
-      border-bottom: 2px solid transparent;
-      transition: border-color 0.15s ease, color 0.15s ease;
-    }
-    nav a:hover {
-      color: var(--accent);
-      border-bottom-color: var(--accent);
-    }
-    nav a.active {
-      color: var(--accent);
-      border-bottom-color: var(--accent);
-    }
-
-    .nav-right {
-      display: flex;
-      gap: 28px;
-      align-items: center;
-      margin-left: auto;
-    }
-    .nav-phone {
-      color: var(--white);
-      text-decoration: none;
-      font-family: "Archivo", sans-serif;
-      font-weight: 700;
-      font-size: 13px;
-      letter-spacing: 0.04em;
-      white-space: nowrap;
-    }
-    .btn {
-      background: var(--accent);
-      color: var(--white);
-      padding: 14px 22px;
-      font-size: 12px;
-      font-weight: 800;
-      letter-spacing: 0.08em;
-      white-space: nowrap;
-      text-decoration: none;
-      border: none;
-      cursor: pointer;
-      font-family: "Archivo", sans-serif;
-      text-transform: uppercase;
-    }
-    .btn:hover {
-      opacity: 0.9;
-    }
 
     main { min-height: 400px; padding: 80px 0; }
     h1 { font-family: "Archivo Black", sans-serif; font-size: 48px; text-transform: uppercase; margin: 20px 0; }
@@ -170,41 +48,18 @@
 /* Engineering blueprint texture on all white surfaces */
 .bg-white, .bg-light, .light-section, .on-light, .blurbs-section {
   background-color:#FFFFFF !important;
-  background-image:url('assets/white-engineering-background.png') !important;
+  background-image:url('assets/white-engineering-background.webp') !important;
   background-size:cover !important;
   background-position:center !important;
   background-attachment:fixed !important;
 }
 </style>
 <style id="white-texture-body">
-body { background-image:url('assets/white-engineering-background.png') !important; background-size:cover !important; background-position:center !important; background-attachment:fixed !important; background-color:#FFFFFF !important; }
+body { background-image:url('assets/white-engineering-background.webp') !important; background-size:cover !important; background-position:center !important; background-attachment:fixed !important; background-color:#FFFFFF !important; }
 </style>
+<style>html,body{overflow-x:hidden}</style>
 </head>
 <body>
-  <!-- HEADER -->
-  <header id="nav-header">
-    <div>
-      <a href="index.html" class="nav-logo">
-        <img src="assets/toughjobs-monogram-logo.webp" alt="Toughjobs">
-        <div class="nav-logo-text">
-          <span class="tough">TOUGH</span><span class="jobs">JOBS</span>
-        </div>
-      </a>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="partnerships.html">Partnerships</a>
-        <a href="free-tools.html">Free Tools</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      <div class="nav-right">
-        <a href="tel:3099289080" class="nav-phone">(309) 928-9080</a>
-        <a href="contact.html" class="btn">Request a Quote</a>
-      </div>
-    </div>
-  </header>
-
   <!-- MAIN CONTENT -->
   <main>
     <div class="container">
@@ -253,9 +108,7 @@ body { background-image:url('assets/white-engineering-background.png') !importan
     </div>
   </footer>
 
-  <script>
-    const navHeader = document.getElementById('nav-header');
-  </script>
+<script src="inject-header.js"></script>
 <script src="sticky-cta.js"></script>
 <script src="accessibility.js"></script>
 <script src="image-finder-tab.js"></script>

@@ -37,6 +37,7 @@
   input:focus,textarea:focus,select:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(200,38,42,.1)}
   textarea{resize:vertical;min-height:140px}
   .form-row{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .contact-cols{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
   @media(max-width:640px){
     .form-row{grid-template-columns:1fr}
   }
@@ -51,12 +52,13 @@
 /* Engineering blueprint texture on all white surfaces */
 .bg-white, .bg-light, .light-section, .on-light, .blurbs-section {
   background-color:#FFFFFF !important;
-  background-image:url('assets/white-engineering-background.png') !important;
+  background-image:url('assets/white-engineering-background.webp') !important;
   background-size:cover !important;
   background-position:center !important;
   background-attachment:fixed !important;
 }
 </style>
+<style>html,body{overflow-x:hidden}</style>
 </head>
 <body data-page="contact">
 <main>
@@ -78,7 +80,7 @@
 
   <section style="background-image:url('assets/black-schematics.webp');background-size:contain;background-position:center;background-repeat:no-repeat;background-attachment:fixed;background-color:#f5f5f5">
     <div class="container">
-      <div class="contact-cols" style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start">
+      <div class="contact-cols">
         <div>
           <h2 style="margin-top:0">Get in touch</h2>
           <form>
